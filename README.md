@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-Repositorio para tarea N° 7.
+# goit-markup-hw-08
+Repositorio para tarea N° 8.
