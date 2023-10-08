@@ -6,7 +6,12 @@
 
 .base__div {
     display: flex;
-    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.base_items{
+    margin-top: 28px;
 }
 
 .base_items__mapa {
@@ -63,6 +68,7 @@
 
 .suscripcion {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -108,4 +114,44 @@
     gap: 20px;
     align-items: center;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .address {
+        text-align: center;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .base__div{
+        justify-content: center;
+        gap: 165px;
+        row-gap: 60px;
+    }
+    .base__titulo {
+        text-align: center;
+        font-size: 14px;
+    }
+    .suscripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suscripcion__input {
+        width: 450px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .address{
+        text-align: center;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .base__titulo {
+        text-align: center;
+        font-size: 14px;
+    }
 }

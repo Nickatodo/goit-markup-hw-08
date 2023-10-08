@@ -52,6 +52,25 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -221,7 +240,7 @@
             <li>
               <div class="dedicamos__img">
                 <img
-                  src="./images/escritorio_oscuro.jpg"
+                  src="./images/3x/escritorio_oscuro@3x.jpg"
                   alt="Escritorio Negro"
                   width="370"
                   height="294"
@@ -232,7 +251,7 @@
             <li>
               <div class="dedicamos__img">
                 <img
-                  src="./images/escritorio_blanco.jpg"
+                  src="./images/3x/escritorio_blanco@3x.jpg"
                   alt="Escritorio Blanco"
                   width="370"
                   height="294"
@@ -243,7 +262,7 @@
             <li>
               <div class="dedicamos__img">
                 <img
-                  src="./images/tablet.jpg"
+                  src="./images/3x/tablet@3x.jpg"
                   alt="Tablet"
                   width="370"
                   height="294"
@@ -259,11 +278,27 @@
           <h2 class="equipo__titulo">Nuestro Equipo</h2>
           <ul class="equipo__items list">
             <li class="equipo_item">
-              <img
-                src="./images/andres_cubo.jpg"
-                alt="Andrés Cubo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/3x/andres_cubo@3x.jpg 1x,
+                    ./images/2x/andres_cubo@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <source
+                  srcset="
+                    ./images/3x/andres_cubo@3x.jpg 1x,
+                    ./images/1x/andres_cubo.jpg    3x
+                  "
+                  media="(min-width: 300px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <img src="./images/3x/andres_cubo@3x.jpg" alt="Andrés Cubo" />
+              </picture>
               <div class="equipo_item__div">
                 <h3 class="equipo_item__titulo">Andrés Cubo</h3>
                 <p class="equipo_item__txt">Diseñador de Productos</p>
@@ -326,11 +361,30 @@
               </div>
             </li>
             <li class="equipo_item">
-              <img
-                src="./images/carla_palacios.jpg"
-                alt="Carla Palacios"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/3x/carla_palacios@3x.jpg 1x,
+                    ./images/2x/carla_palacios@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <source
+                  srcset="
+                    ./images/3x/carla_palacios@3x.jpg 1x,
+                    ./images/1x/carla_palacios.jpg    3x
+                  "
+                  media="(min-width: 300px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <img
+                  src="./images/3x/carla_palacios@3x.jpg"
+                  alt="Carla Palacios"
+                />
+              </picture>
               <div class="equipo_item__div">
                 <h3 class="equipo_item__titulo">Carla Palacios</h3>
                 <p class="equipo_item__txt">Desarrolladora Frontend</p>
@@ -393,11 +447,27 @@
               </div>
             </li>
             <li class="equipo_item">
-              <img
-                src="./images/mario_dorado.jpg"
-                alt="Mario Dorado"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/3x/mario_dorado@3x.jpg 1x,
+                    ./images/2x/mario_dorado@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <source
+                  srcset="
+                    ./images/3x/mario_dorado@3x.jpg 1x,
+                    ./images/1x/mario_dorado.jpg    3x
+                  "
+                  media="(min-width: 300px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <img src="./images/3x/mario_dorado@3x.jpg" alt="Mario Dorado" />
+              </picture>
               <div class="equipo_item__div">
                 <h3 class="equipo_item__titulo">Mario Dorado</h3>
                 <p class="equipo_item__txt">Marketing</p>
@@ -460,11 +530,30 @@
               </div>
             </li>
             <li class="equipo_item">
-              <img
-                src="./images/pablo_mijangos.jpg"
-                alt="Pablo Mijangos"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/3x/pablo_mijangos@3x.jpg 1x,
+                    ./images/2x/pablo_mijangos@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <source
+                  srcset="
+                    ./images/3x/pablo_mijangos@3x.jpg 1x,
+                    ./images/1x/pablo_mijangos.jpg    3x
+                  "
+                  media="(min-width: 300px)"
+                  type="image/jpg"
+                  width="100%"
+                />
+                <img
+                  src="./images/3x/pablo_mijangos@3x.jpg"
+                  alt="Pablo Mijangos"
+                />
+              </picture>
               <div class="equipo_item__div">
                 <h3 class="equipo_item__titulo">Pablo Mijangos</h3>
                 <p class="equipo_item__txt">Diseñador IU</p>
@@ -612,7 +701,7 @@
     <footer class="base">
       <div class="container">
         <div class="base__div">
-          <address>
+          <address class="address">
             <a href="./index.html" class="logo link">WebStudio</a>
             <ul class="base_items list">
               <li>
@@ -709,6 +798,60 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="menu__mobiles list">
+        <li>
+          <a href="./index.html" class="menu__mobile link">Estudio</a>
+        </li>
+        <li>
+          <a href="./portafolio.html" class="menu__mobile link">Portafolio</a>
+        </li>
+        <li><a href="#" class="menu__mobile link">Contactos</a></li>
+      </ul>
+      <div class="menu__mobile_footer">
+        <a href="tel:+525555296000" class="mobile_footer__tel link"
+          >+52 55 5529 6000</a
+        >
+        <a href="mailto:info@example.com" class="mobile_footer__mail link"
+          >info@example.com</a
+        >
+      </div>
+      <div>
+        <ul class="menu__mobile_rrss list">
+          <li>
+            <a href="#" class="mobile__rrss link">Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="mobile__rrss link">Twitter</a>
+          </li>
+          <li><a href="#" class="mobile__rrss link">Facebook</a></li>
+          <li><a href="#" class="mobile__rrss link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

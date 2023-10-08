@@ -12,6 +12,7 @@
 
 .clientes__items {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -36,4 +37,32 @@
 .clientes__icon {
     fill: #afb1b8;
     transition: fill 250ms $cubic;
+}
+
+@media (max-width: 1200px) {
+    .clientes {
+        padding: 60px 0;
+    }
+    .clientes__titulo {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .clientes__link {
+        width: 226px;
+        height: 92px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clientes {
+        padding: 60px 0;
+    }
+    .clientes__titulo {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .clientes__link {
+        width: 210px;
+        height: 92px;
+    }
 }

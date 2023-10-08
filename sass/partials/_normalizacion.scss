@@ -66,3 +66,15 @@ p {
     padding-right: 15px;
     margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 480px;
+    }
+}

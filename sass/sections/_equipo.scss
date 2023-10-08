@@ -16,9 +16,12 @@
 .equipo__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .equipo_item {
+    width: 270px;
+    height: 428px;
     border-radius: 0px 0px 4px 4px;
     background: $color-blanco;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -70,4 +73,45 @@
 .equipo_rrss__icon {
     fill: #afb1b8;
     transition: fill 250ms $cubic;
+}
+
+@media (max-width: 1200px) {
+    .equipo {
+        padding: 60px 0;
+    }
+    .equipo__titulo {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .equipo__items {
+        gap: 30px;
+    }
+    .equipo_item {
+        width: 354px;
+        height: 536px;
+    }
+    .equipo_rrss {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .equipo {
+        padding: 60px 0;
+    }
+    .equipo__titulo {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .equipo__items {
+        gap: 30px;
+    }
+    .equipo_item {
+        width: 450px;
+        height: 622px;
+    }
+    .equipo_rrss {
+        justify-content: center;
+    }
 }
